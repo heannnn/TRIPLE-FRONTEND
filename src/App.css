@@ -1,0 +1,12 @@
+.tripleImg {
+  width: 400px;
+  height: 338px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.list {
+  align-self: center;
+}
