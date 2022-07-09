@@ -1,0 +1,20 @@
+.storelist {
+  display: flex;
+  font-size: 14px;
+  font-family: sans-serif;
+  justify-content: flex-start;
+  animation-name: fadeInDown;
+  animation-duration: 700ms;
+  animation-delay: 200ms;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 5%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}

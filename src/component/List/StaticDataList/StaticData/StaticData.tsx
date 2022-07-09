@@ -1,29 +1,30 @@
 import React from 'react'
 import { useCountUp } from 'react-countup'
-import './CountUp.css'
 
-interface IcountUp {
+import './StaticData.css'
+
+interface Idata {
   id: number
   end: number
-  unit: string | null
-  text: string | null
+  unit: string
+  text: string
 }
 
-function CountUp(props: IcountUp): React.ReactElement {
+function StaticData(props: Idata): React.ReactElement {
   useCountUp({
     ref: props.id?.toString() || '',
     end: props.end,
   })
 
   return (
-    <div className="item">
+    <div className="data">
       <strong>
         <span id={props.id?.toString()} />
         만&nbsp;{props.unit}
       </strong>
-      <div>{props.text}</div>
+      <div>의&nbsp;{props.text}</div>
     </div>
   )
 }
 
-export default CountUp
+export default StaticData

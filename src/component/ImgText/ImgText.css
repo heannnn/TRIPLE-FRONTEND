@@ -1,0 +1,51 @@
+.triplelogo {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  animation-name: fadeInDown;
+  animation-duration: 700ms;
+  animation-delay: 0ms;
+}
+
+.triplelogo img {
+  width: 400px;
+  height: 338px;
+}
+
+.triplelogo p {
+  position: absolute;
+  top: 80%;
+  color: rgba(58, 58, 58, 0.7);
+}
+
+.store {
+  display: flex;
+  align-items: center;
+  color: rgba(58, 58, 58, 0.7);
+  font-weight: bold;
+}
+
+.store img {
+  width: 54px;
+  height: 54px;
+}
+
+.store p {
+  white-space: pre-wrap;
+  color: rgba(58, 58, 58, 0.7);
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 5%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
