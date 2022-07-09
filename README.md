@@ -9,8 +9,6 @@
 개발 모드에서 앱을 실행합니다.
 브라우저에서 보려면 http://localhost:3000을 엽니다.
 
-### Github Pages로 배포된 페이지 확인하기
-
 ## 사용한 기술과 선택한 이유
 
 ### ESLint, Prettier
